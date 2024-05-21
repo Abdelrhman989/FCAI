@@ -1,0 +1,54 @@
+#Services {
+  padding: 100px 0;
+}
+#Services .container {
+  margin: auto;
+  width: 80%;
+  background-color: var(--base-blue);
+  text-align: center;
+  color: var(--white);
+  padding: 70px 34px 90px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Services .container h1 {
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+#Services .container .Services_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-around;
+  gap: 48px;
+}
+/*Evry single service*/
+#Services .container .Services_content > div {
+  /* transition: 0.5s; */
+}
+#Services .container .Services_content > div:hover {
+}
+#Services .container .Services_content > div img {
+  background-color: var(--base-blue);
+  margin-bottom: 13px;
+}
+
+@media (max-width: 636px) {
+  #Services .container .Services_content {
+    /* gap: 80px; */
+  }
+  #Services .container h1 {
+    font-size: 25px;
+  }
+  #Services .container {
+    font-size: 20px;
+  }
+  #Services .container .Services_content > div img.bankImg {
+    width: 100%;
+  }
+}

@@ -1,0 +1,175 @@
+main .container {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 140px;
+  /* margin-bottom: 20px; */
+}
+main aside {
+  border-right: 2px solid rgb(235, 235, 235);
+  padding: 10px 20px 0px 0px;
+}
+main aside h1 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  text-align: right;
+  color: #333333;
+  margin-bottom: 20px !important;
+}
+
+main aside h1::before {
+  right: -15px !important;
+  width: 5px !important;
+}
+
+main aside ul li {
+  text-align: right;
+  list-style: decimal;
+  direction: rtl;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+main aside ul li a {
+  color: #333333;
+  opacity: 0.8;
+  /* text-decoration: underline; */
+  font-size: 20px;
+  transition: 0.4s;
+}
+main aside ul li a:hover {
+  color: var(--base-blue);
+  opacity: 1;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-left: 8%;
+}
+
+main article .article-image {
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  /* height: 372px; */
+  aspect-ratio: 18 / 9;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  /* border: 2px solid var(--base-blue); */
+  /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); */
+}
+main article .article-image .service-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+main article .article-image .fcai-logo {
+  position: absolute;
+  width: 30%;
+  top: 4%;
+  right: 3%;
+  z-index: 3;
+}
+main article .article-image .blue-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  background-image: linear-gradient(
+    45deg,
+    #045ce98b,
+    transparent 40%,
+    transparent,
+    #045ce9b9
+  );
+}
+
+main article .main-title {
+  font-size: 36px;
+  color: #333333;
+  text-align: right;
+  margin-top: 15px;
+  font-family: "Cairo", sans-serif;
+}
+main article p {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (min-width: 850px) and (max-width: 1260px) {
+  main .container {
+    margin-top: 155px;
+  }
+}
+
+@media (max-width: 910px) {
+  main .container {
+    margin-top: 175px;
+  }
+}
+
+@media (max-width: 850px) {
+  main .container {
+    margin-top: 110px;
+  }
+  main article .main-title {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  main aside h1 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+    margin-right: 10px !important;
+  }
+  main aside h1::before {
+    right: -10px !important;
+    width: 4px !important;
+  }
+  main aside ul li {
+    margin-right: 25px;
+  }
+  main aside ul li a {
+    font-size: 16px;
+  }
+  .main-title {
+    margin-top: 5px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  main article .article-image {
+    border-radius: 15px;
+  }
+  main aside {
+    display: none;
+  }
+  main article {
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  main article .main-title,
+  main article p {
+    text-align: center;
+  }
+  main .container {
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 400px) {
+  main article .main-title {
+    font-size: 20px;
+  }
+  main article p {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  main .container {
+    margin-top: 100px;
+  }
+}

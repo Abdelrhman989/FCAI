@@ -1,0 +1,137 @@
+.footer {
+  width: calc(100% - 72px);
+  border-radius: 36px;
+  margin: 85px auto 36px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--base-blue),
+    var(--dark-blue)
+  );
+}
+.footer.article-page {
+  border-radius: 20px;
+  width: calc(100% - 70px);
+}
+.footer .container .logo {
+  padding: 64px 0 56px;
+  text-align: center;
+}
+.footer .container .logo .fcai-logo {
+  width: 86px;
+  height: 86px;
+}
+.footer .container .logo .college {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+.footer .container .logo .university {
+  color: var(--white-blue);
+  font-weight: 500;
+}
+
+.footer .container .footer-links {
+  padding: 0 0 56px;
+  display: grid;
+  /* grid-template-columns: 2fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(5, auto);
+  grid-template-columns: 2fr auto auto auto auto;
+  gap: 56px;
+  border-bottom: 1px solid var(--light-blue);
+}
+.footer .container .footer-links .general-info {
+  display: grid;
+  gap: 32px;
+}
+.footer .container .footer-links .general-info :is(.location, .email, .phone) {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.footer
+  .container
+  .footer-links
+  .general-info
+  :is(.location p, .email p, .phone p) {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--light-blue);
+}
+.footer .container .footer-links .footer-link .title {
+  color: var(--light-blue);
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.footer .container .footer-links .footer-link ul {
+  display: grid;
+  gap: 12px;
+}
+.footer .container .footer-links .footer-link ul li a {
+  color: var(--white-blue);
+  font-weight: 500;
+}
+.footer .container .copyrights {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--light-blue);
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer .container .copyrights a {
+  color: #ffe24f;
+}
+
+@media (max-width: 1340px) {
+  .footer .container .footer-links {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1090px) {
+  .footer .container .footer-links {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer .container .footer-links {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    border-radius: 24px;
+    margin: 56px auto 24px;
+  }
+  .footer .container .footer-links {
+    grid-template-columns: 1fr;
+  }
+  .footer .container .footer-links .footer-link .title {
+    margin-bottom: 24px;
+  }
+  .footer .container .footer-links .general-info {
+    gap: 24px;
+  }
+}
+@media (max-width: 475px) {
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .footer .container .copyrights {
+    font-size: 18px;
+  }
+  .footer .container .logo .fcai-logo {
+    width: 64px;
+    height: 64px;
+  }
+  .footer .container .logo .college {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .footer .container .logo .university {
+    font-size: 14px;
+  }
+}

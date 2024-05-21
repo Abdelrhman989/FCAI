@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+:root {
+  --base-blue: #045de9;
+  --dark-blue: #0040af;
+  --light-warning: #fcf8e3;
+  --dark-warning: #ffbf00;
+  --light-error: #ff0000;
+  --dark-error: #fce3e3;
+  --base-bg: #fbfbfb;
+  --white: #ffffff;
+  --off-white: #f0f6ff;
+  --black: #0e1015;
+  --gray: #555555;
+  --light-gray: #f2f4f5;
+  --border-color: #e2e2e2;
+  --paragraph-color: #eef5ff;
+  --hover-color: #045dcf;
+  --white-blue: #9abaed;
+  --light-blue: #eef5ff;
+  --main-transition: 0.3s ease;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: var(--base-bg);
+  overflow-x: hidden;
+}
+
+.main-btn {
+  border: none;
+  color: #fff;
+  background-color: var(--base-blue);
+  padding: 8px 24px 10px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 15px 0px;
+  transition: background-color var(--main-transition);
+}
+
+.section-name {
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 1;
+  margin-right: 22px;
+  margin-bottom: 30px;
+}
+
+.section-name::before {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 4px;
+  width: 7px;
+  height: 74%;
+  background-color: var(--base-blue);
+}
+
+.section-shadow-name {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  color: hsl(0, 7%, 92%);
+  font-size: 56px;
+  user-select: none;
+
+  display: none;
+}
+
+/* Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--border-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--base-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-blue);
+}
+
+section {
+  overflow: hidden;
+}
+
+@media (max-width: 630px) {
+  .section-name {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .section-name::before {
+    right: -18px;
+    width: 6px;
+  }
+}
+
+@media (max-width: 630px) {
+  .section-name {
+    font-size: 26px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  .section-name::before {
+    right: -14px;
+    width: 5px;
+  }
+}

@@ -1,0 +1,300 @@
+#eventsSection .container {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  margin: 50px auto 40px;
+}
+
+#eventsSection .info {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--paragraph-color);
+  border-radius: 15px;
+}
+
+#eventsSection .info .calendar {
+  position: relative;
+  width: 50%;
+  padding-bottom: 20px;
+}
+#eventsSection .info .calendar .calendar-icon {
+  position: relative;
+  height: 64px;
+  background-color: #4480df;
+  border-radius: 15px 0px 0px 0px;
+}
+
+#eventsSection .info .calendar .calendar-icon div {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  top: -27px;
+}
+
+#eventsSection .info .calendar .calendar-icon div span {
+  display: inline-block;
+  width: 24px;
+  height: 51px;
+  background-color: #2155a8;
+  border-radius: 50px;
+}
+
+#eventsSection .info .calendar .calendar-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 8px;
+  width: 100%;
+  background-color: #2155a8;
+}
+
+#eventsSection .info .calendar .event-appointment {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 30px;
+}
+
+#eventsSection .info .calendar .calendar-details {
+  text-align: center;
+}
+
+#eventsSection .info .calendar .calendar-details .days {
+  margin-bottom: 13px;
+}
+
+#eventsSection .info .calendar .calendar-details .days,
+#eventsSection .info .calendar .calendar-details .daysByNums {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 20px;
+  direction: rtl;
+}
+
+#eventsSection .info .calendar .calendar-details .days span,
+#eventsSection .info .calendar .calendar-details .daysByNums div {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.eventDay {
+  background-color: var(--base-blue);
+  border-radius: 50%;
+  padding: 3px 0px;
+  color: #fff;
+  display: inline-block;
+  width: 32px;
+}
+
+#eventsSection .info .event-info {
+  position: relative;
+  direction: rtl;
+  width: 50%;
+  background-image: url("../imgs/photo_2023-03-09_16-28-14.png");
+  /* background-image: url('imgs/DSC_3314.JPG'); */
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#eventsSection .info .event-info .blur-widget {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #001638, #0e1015);
+  border-radius: inherit;
+  opacity: 0.4;
+}
+
+#eventsSection .info .event-info .about-event {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 2;
+  padding: 23px 48px;
+}
+
+#eventsSection .info .calendar .calendar-details {
+  padding: 0px 10px 11px;
+}
+
+#eventsSection .info .event-info .about-event h1 {
+  color: #fff;
+  font-size: 39px;
+  margin: 20px 0px 0px;
+}
+
+#eventsSection .info .event-info .about-event p {
+  color: var(--paragraph-color);
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+#eventsSection .info .event-info .about-event a {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+#eventsSection .info .event-info .about-event a button {
+  margin-right: 11px;
+  background-color: transparent;
+  color: #eef5ff;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+}
+/* End Events Section  */
+
+/* Start Media Queries */
+@media screen and (max-width: 322px) {
+  #eventsSection .info {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #eventsSection .info .calendar,
+  #eventsSection .info .event-info {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  #eventsSection .info .calendar .calendar-details div span {
+    font-size: 7px !important;
+  }
+
+  .eventDay {
+    padding: 4px 0px;
+    width: 18px;
+  }
+
+  #eventsSection .info .event-info .about-event h1 {
+    font-size: 17px;
+  }
+
+  #eventsSection .info .event-info .about-event p,
+  #eventsSection .info .event-info .about-event a button {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 322px) and (max-width: 520px) {
+  #eventsSection .info {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #eventsSection .info .calendar,
+  #eventsSection .info .event-info {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  #eventsSection .info .calendar .calendar-details div span {
+    font-size: 10px !important;
+  }
+
+  .eventDay {
+    padding: 4px 0px;
+    width: 24px;
+  }
+
+  #eventsSection .info .event-info .about-event h1 {
+    font-size: 23px;
+  }
+
+  #eventsSection .info .event-info .about-event p,
+  #eventsSection .info .event-info .about-event a button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 640px) {
+  #eventsSection .info {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #eventsSection .info .calendar,
+  #eventsSection .info .event-info {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  #eventsSection .info .calendar .calendar-details div span {
+    font-size: 15px;
+  }
+
+  #eventsSection .info .event-info .about-event h1 {
+    font-size: 25px;
+  }
+
+  #eventsSection .info .event-info .about-event p,
+  #eventsSection .info .event-info .about-event a button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  #eventsSection .info {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #eventsSection .info .calendar,
+  #eventsSection .info .event-info {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  #eventsSection .info .event-info .about-event h1 {
+    font-size: 37px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  #eventsSection .info .calendar .event-appointment {
+    font-size: 28px;
+  }
+
+  #eventsSection .info .calendar .calendar-details .days,
+  #eventsSection .info .calendar .calendar-details .daysByNums {
+    grid-row-gap: 14px;
+  }
+
+  #eventsSection .info .calendar .calendar-details div span {
+    font-size: 14px !important;
+  }
+
+  #eventsSection .info .event-info .about-event h1 {
+    font-size: 29px;
+  }
+
+  #eventsSection .info .event-info .about-event p {
+    font-size: 15px;
+  }
+}
+/* End Media Queries */
+@media (max-width: 900px) {
+  #eventsSection .info .calendar .calendar-icon {
+    border-radius: 15px 15px 0px 0px;
+  }
+  #eventsSection .info .event-info {
+    border-radius: 0px 0px 15px 15px;
+  }
+  #eventsSection .info .event-info {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  #eventsSection .info .calendar,
+  #eventsSection .info .event-info {
+    margin-bottom: 0px !important;
+  }
+  #eventsSection .info .event-info .about-event {
+    padding: 24px 20px;
+  }
+}

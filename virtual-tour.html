@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCAI-SCU VR</title>
+    <link rel="icon" type="image/png" href="./assets/icons/sm-logo.png">
+  </head>
+  <style>
+    .loader {
+      position: absolute;
+      top: 25%;
+      z-index: 1;
+      left: 46%;
+      transform: translateX(-50%) translateY(-50%);
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #333;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    iframe {
+      height: calc(100vh - 20px);
+      margin-top: 0px;
+      z-index: 2;
+      position: relative;
+    }
+  </style>
+  <body style="overflow: hidden">
+    <iframe
+      src="https://app.lapentor.com/sphere/fcai-scu"
+      frameborder="0"
+      width="100%"
+      scrolling="no"
+      allow="vr,gyroscope,accelerometer"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      oallowfullscreen="true"
+      msallowfullscreen="true"
+    ></iframe>
+    <div class="loader"></div>
+  </body>
+</html>

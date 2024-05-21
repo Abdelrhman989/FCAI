@@ -1,0 +1,155 @@
+#contactSection {
+  padding: 50px 0px 25px;
+  text-align: end;
+}
+#contactSection .container {
+  position: relative;
+}
+
+#contactSection .contactRow {
+  display: grid;
+  text-align: end;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  gap: 75px;
+}
+@media (max-width: 1250px) {
+  #contactSection .contactRow {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+  }
+}
+@media (max-width: 937px) {
+  div.mapCol {
+    order: 2;
+  }
+}
+@media (max-width: 500px) {
+  #contactSection .contactRow {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+  }
+}
+
+#contactSection .contactRow .formCol input {
+  border: none;
+  background-color: var(--light-gray);
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: end;
+  padding: 16px;
+}
+
+#contactSection .mapCol iframe {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--light-gray);
+  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px;
+}
+#contactSection .contactRow .formCol .name > div {
+  width: 100%;
+}
+#contactSection .contactRow .formCol .name {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#contactSection .contactRow .formCol label {
+  display: block;
+  padding-right: 5px;
+  font-size: 18px;
+  padding-bottom: 7px;
+  font-weight: 500;
+}
+#contactSection .contactRow .formCol .massage {
+  padding-bottom: 32px;
+}
+#contactSection .contactRow .formCol .massage textarea {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-display: swap;
+  border: none;
+  background-color: var(--light-gray);
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+  text-align: end;
+  padding: 16px;
+  height: 247px;
+  font-size: 16px;
+}
+
+#contactSection .contactRow .formCol input::placeholder,
+#contactSection .contactRow .formCol .massage textarea::placeholder {
+  color: var(--light-grey);
+  opacity: 0.3;
+  font-family: "Tajawal";
+}
+#contactSection .contactRow .formCol form > div {
+  padding-bottom: 11px;
+}
+#contactSection .contactRow .formCol .submit {
+  padding-bottom: 0px;
+}
+#contactSection .contactRow .formCol .submit input {
+  font-family: "Tajawal";
+  font-style: normal;
+  height: 50px;
+  font-weight: 600;
+  font-display: swap;
+  font-size: 18px;
+  background-color: var(--base-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 0;
+}
+
+@media ((min-width: 937px) and (max-width:1200px)) {
+  #contactSection .contactRow .formCol input {
+    height: 35px;
+  }
+  #contactSection .contactRow .formCol .massage textarea {
+    padding: 14px;
+    height: 220px;
+  }
+  #contactSection .contactRow .formCol .submit input {
+    font-size: 17px;
+    height: 32px;
+  }
+  section#contactSection .contactRow .formCol form > div {
+    padding-bottom: 6px;
+  }
+  section#contactSection .contactRow .formCol .massage {
+    padding-bottom: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  #contactSection .contactRow .formCol input {
+    height: 35px;
+  }
+  #contactSection .contactRow .formCol .massage textarea {
+    padding: 14px;
+    height: 200px;
+  }
+  #contactSection .contactRow .formCol .submit input {
+    font-size: 15px;
+    height: 32px;
+  }
+  section#contactSection .contactRow .formCol form > div {
+    padding-bottom: 6px;
+  }
+  section#contactSection .contactRow .formCol .massage {
+    padding-bottom: 18px;
+  }
+
+  #contactSection .contactRow .formCol .massage textarea::placeholder {
+    font-size: 14px;
+  }
+  #contactSection .contactRow .formCol input::placeholder {
+    font-size: 14px;
+  }
+}

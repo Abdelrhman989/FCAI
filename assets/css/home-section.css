@@ -1,0 +1,275 @@
+#homeSection {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+#homeSection .bg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-image: radial-gradient(
+    ellipse at bottom,
+    var(--base-blue) 50%,
+    var(--dark-blue) 100%
+  );
+  border-radius: 50% / 28%;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+#homeSection .bg .line-motifs {
+  position: absolute;
+  width: 45px;
+  opacity: 0.1;
+  top: 19%;
+  right: 16%;
+}
+#homeSection .bg .dots-motifs {
+  position: absolute;
+  width: 80px;
+  opacity: 0.1;
+  bottom: 40%;
+  left: 12%;
+}
+
+#homeSection .container {
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* =============== NAVBAR =============== */
+/* Moved into a separated file */
+/* =============== HEADER =============== */
+#homeSection .container .sub-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  margin-top: -80px;
+  z-index: 1;
+}
+#homeSection header {
+  text-align: center;
+  width: 60%;
+}
+#homeSection header h1 {
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.3;
+  font-family: "Cairo", sans-serif;
+}
+
+#homeSection header p {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+}
+
+@media (max-width: 1250px) {
+  #homeSection header h1 {
+    font-size: 48px;
+  }
+  #homeSection header p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 850px) {
+  #homeSection header h1 {
+    font-size: 44px;
+  }
+  #homeSection header p {
+    font-size: 14px;
+  }
+  #homeSection .bg {
+    border-radius: 50% / 25%;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+  #homeSection header {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  #homeSection header {
+    width: 90%;
+  }
+  #homeSection header h1 {
+    font-size: 34px;
+  }
+  #homeSection header p {
+    font-size: 14px;
+  }
+  #homeSection .bg {
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 45% / 15%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  #homeSection .container .sub-cont {
+    gap: 50px;
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 420px) {
+  #homeSection header h1 {
+    font-size: 30px;
+  }
+  #homeSection .container {
+    width: 85%;
+  }
+  #homeSection .container .sub-cont {
+    gap: 30px;
+  }
+}
+
+/* =============== FORM =============== */
+#homeSection .container form {
+  width: 90%;
+  min-height: 120px;
+}
+#homeSection .container form .parent {
+  margin: 0 auto;
+  background-color: var(--off-white);
+  max-width: 700px;
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.2);
+}
+#homeSection .container form .child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgba(11, 8, 69, 0.2);
+  width: 90%;
+  height: 100%;
+  padding: 0px 24px;
+  gap: 30px;
+}
+#homeSection .container form .child .input-item {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  width: 100%;
+  gap: 10px;
+}
+#homeSection .container form .input-item label {
+  /* width: 70px; */
+}
+#homeSection form .select-cont {
+  width: 100%;
+}
+#homeSection form .select {
+  position: relative;
+}
+#homeSection form .select svg {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 3px);
+  width: 10px;
+  height: 6px;
+  stroke-width: 2px;
+  stroke: #9098a9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+#homeSection form .select select {
+  -webkit-appearance: none;
+  padding: 7px 30px 7px 12px;
+  width: 100%;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: right;
+  font-size: 16px;
+  transition: all 150ms ease;
+}
+#homeSection form .select select:required:invalid {
+  color: #5a667f;
+}
+#homeSection form .select select option {
+  width: 100%;
+  color: #223254;
+}
+#homeSection form .select select option[value=""][disabled] {
+  display: none;
+}
+#homeSection form .select select:focus {
+  outline: none;
+  border-color: #07f;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+#homeSection form .select select:focus + svg {
+  stroke: #07f;
+}
+#homeSection .container form .sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 650px) {
+  #homeSection .container form .child {
+    flex-direction: column-reverse;
+    padding: 12px;
+    gap: 15px;
+  }
+}
+
+/* =============== SCROLL ICON =============== */
+#homeSection .scroll-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  animation: scroll-icon 1s ease-in-out alternate infinite;
+}
+@keyframes scroll-icon {
+  0% {
+    bottom: 15px;
+    opacity: 0.5;
+  }
+  100% {
+    bottom: 2px;
+    opacity: 0.8;
+  }
+}
+#homeSection .scroll-icon i {
+  font-size: 2.3rem;
+}
+#homeSection .scroll-icon i:first-child {
+  font-size: 1.7rem;
+  opacity: 0.5;
+  margin-top: -20px;
+}

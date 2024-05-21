@@ -1,0 +1,108 @@
+#virtualSection {
+  height: 620px;
+  margin: 90px 0px 45px;
+}
+#virtualSection .bg-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/blured-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 50% / 7%;
+  color: white;
+  text-align: center;
+  text-indent: 0.1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+#virtualSection .bg-section:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 10% / 50%;
+}
+#virtualSection .bg-section .gradient-abs {
+  position: absolute;
+  width: 102%;
+  height: 100%;
+  top: 0px;
+  right: 0pc;
+  background-image: linear-gradient(45deg, #0e1015, #00225e);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#virtualSection .main-container {
+  position: relative;
+  z-index: 2;
+}
+#virtualSection .main-container .fa-vr-cardboard {
+  font-size: 120px;
+}
+#virtualSection .main-container h1 {
+  font-size: 56px;
+  margin: 10px 0px;
+}
+#virtualSection .main-container p {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+#virtualSection .main-container button {
+  padding: 12px 48px;
+  font-size: 24px;
+  background-color: var(--base-blue);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#virtualSection .main-container button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 980px) {
+  #virtualSection .main-container .fa-vr-cardboard {
+    font-size: 100px;
+  }
+  #virtualSection .main-container h1 {
+    font-size: 48px;
+  }
+  #virtualSection .main-container p {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  #virtualSection .main-container button {
+    padding: 12px 48px;
+  }
+}
+
+@media (max-width: 450px) {
+  #virtualSection .main-container .fa-vr-cardboard {
+    font-size: 80px;
+  }
+  #virtualSection .main-container h1 {
+    font-size: 42px;
+    margin: 10px 0px;
+  }
+  #virtualSection .main-container p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #virtualSection .main-container button {
+    padding: 12px 48px;
+    font-size: 20px;
+  }
+}

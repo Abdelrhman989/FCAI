@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#045de9"/>
+      <stop offset="1" stop-color="#4f93ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_159" data-name="Group 159" transform="translate(1435.765 -41.608)">
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="96" height="95.735" transform="translate(-1435.765 41.608)" fill="none"/>
+    <path id="database-solid" d="M83.838,14.952v8.971c0,8.261-18.77,14.952-41.919,14.952S0,32.184,0,23.923V14.952C0,6.691,18.77,0,41.919,0S83.838,6.691,83.838,14.952ZM73.583,40.127a36.625,36.625,0,0,0,10.255-5.345V53.827c0,8.261-18.77,14.952-41.919,14.952S0,62.088,0,53.827V34.782a36.143,36.143,0,0,0,10.255,5.345c8.4,2.99,19.593,4.729,31.664,4.729S65.18,43.118,73.583,40.127ZM0,64.686a36.143,36.143,0,0,0,10.255,5.345c8.4,2.99,19.593,4.729,31.664,4.729s23.261-1.738,31.664-4.729a36.625,36.625,0,0,0,10.255-5.345V80.74c0,8.261-18.77,14.952-41.919,14.952S0,89,0,80.74Z" transform="translate(-1429.971 41.916)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
